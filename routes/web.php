@@ -11,8 +11,6 @@
 |
 */
 
-Route::get('/', function () {
-    return view('pages.index');
-});
+Route::get('/',['uses'=>'UserController@index']);
 
 Route::get('bi', ['uses'=>'UserController@index']);

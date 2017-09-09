@@ -13,4 +13,3 @@
 
 Route::get('/',['uses'=>'UserController@index']);
 
-Route::get('bi', ['uses'=>'UserController@index']);

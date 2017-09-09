@@ -10,6 +10,6 @@
 | contains the "web" middleware group. Now create something great!
 |
 */
-//trang chu 
+//route trang chu
 Route::get('/',['uses'=>'UserController@index']);
 

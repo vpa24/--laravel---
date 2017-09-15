@@ -12,8 +12,7 @@ class UserController extends Controller
 {
     public function index()
     {
-        $thang=date('m');
-    
+      
         $ds_san_pham=m_san_pham::join('chi_tiet_don_hang','san_pham.ma_sp','=','chi_tiet_don_hang.ma_sp')
                         ->join('don_hang','chi_tiet_don_hang.ma_don_hang','=','don_hang.ma_don_hang')
                         ->whereMonth('ngay_dat',2)

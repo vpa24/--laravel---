@@ -5,9 +5,9 @@
 			</div>
 			<div class="w3ls_logo_products_left1">
 				<ul class="special_items">
-					<li><a href="events.html">Events</a><i>/</i></li>
-					<li><a href="about.html">About Us</a><i>/</i></li>
-					<li><a href="products.html">Best Deals</a><i>/</i></li>
+					<li><a href="events.html">Tin Tức</a><i>/</i></li>
+					<li><a href="about.html">Về chúng tôi</a><i>/</i></li>
+					<li><a href="products.html">Sản phẩm mới</a><i>/</i></li>
 					<li><a href="services.html">Giao hàng</a></li>
 				</ul>
 			</div>

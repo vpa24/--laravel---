@@ -11,5 +11,5 @@
 |
 */
 //route trang chu
-Route::get('/',['uses'=>'UserController@index']);
-
+Route::get('/','UserController@index');
+Route::get('/loai-san-pham/{ma_loai}','San_PhamController@Hien_thi_san_pham_theo_ma_loai');

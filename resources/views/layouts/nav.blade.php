@@ -8,7 +8,7 @@
 					<li><a href="events.html">Events</a><i>/</i></li>
 					<li><a href="about.html">About Us</a><i>/</i></li>
 					<li><a href="products.html">Best Deals</a><i>/</i></li>
-					<li><a href="services.html">Services</a></li>
+					<li><a href="services.html">Giao hàng</a></li>
 				</ul>
 			</div>
 			<div class="w3ls_logo_products_left1">

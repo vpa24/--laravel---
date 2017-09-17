@@ -9,13 +9,14 @@ License URL: http://creativecommons.org/licenses/by/3.0/
 <head>
 	 @include('layouts.head')
 </head>
-	
+
 <body>
 	@include('layouts.header')
 	@include('layouts.nav')
-	@yield('banner')
+	@include('layouts.banner_left')
+	@include('layouts.banner_right')
 	@yield('content')
 	@include('layouts.footer')
 	@include('layouts.script')
 </body>
-</html>  
+</html>

@@ -279,16 +279,17 @@ ul.dropdown-menu.drp-mnu li a i {
 .w3ls_vegetables_menu {
     left: 13%;
     border: none;
-    padding: 1em;
+    padding: 1em 1em 0 1em;
 }
 .w3ls_vegetables ul li {
     list-style-type: none;
 }
-.w3ls_vegetables ul li:first-child {
-    margin-bottom:.5em;
+.w3ls_vegetables ul li:last-child {
+    margin-bottom:0;
 }
 .w3ls_vegetables ul li a {
     color: #212121;
+    margin-bottom:.5em;
 /*-- w3layouts --*/
     display: block;
     text-decoration: none;

@@ -6,8 +6,6 @@
 			<h3>Bán Chạy</h3>
 			<div class="agile_top_brands_grids">
 			@foreach($users as $mang)
-
-
 				<div class="col-md-3 top_brand_left">
 					<div class="hover14 column">
 						<div class="agile_top_brand_left_grid">

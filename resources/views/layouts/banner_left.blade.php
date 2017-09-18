@@ -57,8 +57,6 @@
 									</div>
 								</div>
 							</li>
-
-
 							<li class="dropdown mega-dropdown active">
 								<a href="#" class="dropdown-toggle" data-toggle="dropdown">Đồ Uống<span class="caret"></span></a>
 								<div class="dropdown-menu mega-dropdown-menu w3ls_vegetables_menu">

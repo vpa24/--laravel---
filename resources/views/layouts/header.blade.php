@@ -50,7 +50,7 @@
    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
         <ul class="nav navbar-nav nav_1">
-            <li><a class="color" href=".">Trang chủ</a></li>
+            <li><a class="color" href="{{URL::to('/')}}">Trang chủ</a></li>
 
     		<li class="dropdown mega-dropdown active">
 			    <a class="color1" href="#" class="dropdown-toggle" data-toggle="dropdown">Thực Phẩm<span class="caret"></span></a>
@@ -60,10 +60,10 @@
 							<div class="h_nav">
 								<h4>Đồ tươi sống</h4>
 									<ul>
-										<li><a href="product.html">Rau - Củ - Quả</a></li>
-										<li><a href="product.html">Hải Sản</a></li>
-										<li><a href="product.html">Đậu Hủ</a></li>
-										<li><a href="product.html">Thịt</a></li>
+										<li><a href="/loai-san-pham/1">Rau - Củ - Quả</a></li>
+										<li><a href="/loai-san-pham/4">Hải Sản</a></li>
+										<li><a href="/loai-san-pham/3">Đậu Hủ</a></li>
+										<li><a href="/loai-san-pham/5">Thịt</a></li>
 
 									</ul>
 							</div>
@@ -72,9 +72,9 @@
 							<div class="h_nav">
 								<h4>Bơ - Sữa</h4>
 								<ul>
-										<li><a href="product.html">Sữa Nước</a></li>
-										<li><a href="product.html">Phô Mai</a></li>
-										<li><a href="product.html">Sữa Chua</a></li>
+										<li><a href="/loai-san-pham/9">Sữa Nước</a></li>
+										<li><a href="/loai-san-pham/11">Phô Mai</a></li>
+										<li><a href="/loai-san-pham/12">Sữa Chua</a></li>
 								</ul>
 							</div>
 						</div>
@@ -82,10 +82,8 @@
 							<div class="h_nav">
 								<h4>Đồ Uống</h4>
 									<ul>
-										<li><a href="product.html">Nước Ngọt</a></li>
-										<li><a href="product.html">Nước Suối</a></li>
-										<li><a href="product.html">Cà Phê</a></li>
-										<li><a href="product.html">Bia</a></li>
+										<li><a href="/loai-san-pham/30">Nước Ngọt</a></li>
+										<li><a href="/loai-san-pham/31">Nước Suối</a></li>
 									</ul>
 
 							</div>
@@ -94,16 +92,21 @@
 							<div class="h_nav">
 								<h4>Thực Phẩm khô</h4>
 								<ul>
-									<li><a href="product.html">Mì Ăn Liền</a></li>
-									<li><a href="product.html">Đường</a></li>
-									<li><a href="product.html">Gia Vị</a></li>
-									<li><a href="product.html">Dầu Ăn</a></li>
+									<li><a href="/loai-san-pham/46">Mì Ăn Liền</a></li>
+									<li><a href="/loai-san-pham/21">Đường</a></li>
+									<li><a href="/loai-san-pham/44">Gia Vị</a></li>
+									<li><a href="/loai-san-pham/23">Dầu Ăn</a></li>
 								</ul>
 							</div>
 						</div>
 						<div class="col1 col5">
-						<img src="images/thuc-pham-chuc-nang.jpg" class="img-responsive fix" alt="">
-						</div>
+							@isset($san_pham_theo_ma_loai)
+								<img src="../images/thuc-pham-chuc-nang.jpg" class="img-responsive fix" alt="">
+							@endisset
+							@empty($san_pham_theo_ma_loai)
+								<img src="images/thuc-pham-chuc-nang.jpg" class="img-responsive fix" alt="">
+							@endempty
+						<div>
 						<div class="clearfix"></div>
 					</div>
 				</div>
@@ -114,13 +117,10 @@
                     <div class="menu-top">
 						<div class="col1">
 							<div class="h_nav">
-								<h4>Bách Hóa</h4>
+								<h4>Sức Khỏe</h4>
 									<ul>
-										<li><a href="product.html">Bột Giặt</a></li>
-										<li><a href="product.html">Nước Giặt</a></li>
-										<li><a href="product.html">Nước Xả Vải</a></li>
-										<li><a href="product.html">Nước Lau Sàn</a></li>
-
+										<li><a href="/loai-san-pham/54">Thực Phẩm Chức Năng</a></li>
+										<li><a href="/loai-san-pham/55">Handmade</a></li>
 									</ul>
 							</div>
 						</div>
@@ -128,10 +128,8 @@
 							<div class="h_nav">
 								<h4>Làm Đẹp</h4>
 								<ul>
-										<li><a href="product.html">Thực Phẩm Chức Năng</a></li>
-										<li><a href="product.html">Handmade</a></li>
-										<li><a href="product.html">Dược Mỹ Phẩm</a></li>
-										<li><a href="product.html">Cho Sắc Đẹp</a></li>
+										<li><a href="/loai-san-pham/56">Dược Mỹ Phẩm</a></li>
+										<li><a href="/loai-san-pham/57">Cho Sắc Đẹp</a></li>
 									</ul>
 							</div>
 						</div>
@@ -139,10 +137,10 @@
 							<div class="h_nav">
 								<h4>Bách Hóa</h4>
 									<ul>
-										<li><a href="product.html">Bột Giặt</a></li>
-										<li><a href="product.html">Nước Giặt</a></li>
-										<li><a href="product.html">Nước Xả Vải</a></li>
-										<li><a href="product.html">Nước Lau Sàn</a></li>
+										<li><a href="/loai-san-pham/36">Bột Giặt</a></li>
+										<li><a href="/loai-san-pham/37">Nước Giặt</a></li>
+										<li><a href="/loai-san-pham/43">Nước Xả Vải</a></li>
+										<li><a href="/loai-san-pham/48">Nước Lau Sàn</a></li>
 									</ul>
 							</div>
 						</div>
@@ -150,21 +148,28 @@
 							<div class="h_nav">
 								<h4>Đồ Dùng</h4>
 								<ul>
-									<li><a href="product.html">Bàn Chải</a></li>
-									<li><a href="product.html">Kem Đánh Răng</a></li>
-									<li><a href="product.html">Sữa Tắm</a></li>
-									<li><a href="product.html">Dầu Gội</a></li>
+									<li><a href="/loai-san-pham/50">Bàn Chải</a></li>
+									<li><a href="/loai-san-pham/51">Kem Đánh Răng</a></li>
+									<li><a href="/loai-san-pham/52">Sữa Tắm</a></li>
+									<li><a href="/loai-san-pham/53">Dầu Gội</a></li>
 								</ul>
 							</div>
 						</div>
 						<div class="col1 col5">
-						<img src="images/1dsp-20160207-sh004.png" class="img-responsive" alt="">
+							@isset($san_pham_theo_ma_loai)
+								<img src="../images/1dsp-20160207-sh004.png" class="img-responsive" alt="">
+							@endisset
+
+						@empty($san_pham_theo_ma_loai)
+							<img src="images/1dsp-20160207-sh004.png" class="img-responsive" alt="">
+						@endempty
+
 						</div>
 						<div class="clearfix"></div>
 					</div>
 				</div>
 			</li>
-			<li><a class="color3" href="product.html">Sale</a></li>
+			<li><a class="color3" href="/loai-san-pham/4">Sale</a></li>
 			<li><a class="color4" href="404.html">About</a></li>
             <li><a class="color5" href="typo.html">Short Codes</a></li>
             <li ><a class="color6" href="contact.html">Contact</a></li>

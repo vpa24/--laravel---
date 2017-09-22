@@ -761,9 +761,7 @@ ul.kid-menu li,ul.cute li{
 .item-grid1 {
     padding-bottom: 2em;
 }
-.item-grid1:nth-child(7) ,.item-grid1:nth-child(8),.item-grid1:nth-child(9){
-    padding-bottom: 0em;
-}
+
 /*--single--*/
 .span_2_of_a1 h3 {
 	color: #000;
@@ -2346,4 +2344,8 @@ td.add-check a {
   -webkit-line-clamp: 2;
   -webkit-box-orient: vertical;
   height: 42px;
+}
+.hinh{
+  width: 233px;
+  height: 233px;
 }

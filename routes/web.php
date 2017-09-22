@@ -11,6 +11,5 @@
 |
 */
 //route trang chu
-Route::get('/','UserController@index');
+Route::get('/','UserController@index')->name('/');
 Route::get('/loai-san-pham/{ma_loai}','San_PhamController@Hien_thi_san_pham_theo_ma_loai');
-//Route::post('/loai-san-pham/{ma_loai}','BannerController@ThayDoiBanner' );

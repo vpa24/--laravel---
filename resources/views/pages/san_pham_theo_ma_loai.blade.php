@@ -1,6 +1,7 @@
 @extends('main')
 @section('title','Grocery Store a Ecommerce Online Shopping Category Flat')
 @section('content')
+
     	<div class="top-brands">
 		<div class="container">
 			<h3>{{$san_phams[0]->ten_loai}}</h3>
@@ -17,7 +18,7 @@
 										<div class="snipcart-thumb">
 											<a href="single.html"><img title=" " alt=" "class="hinh" src="../images/san_pham/{!! $mang->hinh !!}"  /></a>
 											<p >{!!$mang->ten_sp!!}</p>
-											<h4><?php echo number_format($mang->don_gia_khuyen_mai)?> đ <span><?php echo number_format($mang->don_gia)?> đ</span></h4>
+											<h4>{{ number_format($mang->don_gia_khuyen_mai)}} đ <span> {{ number_format($mang->don_gia)}} đ</span></h4>
 										</div>
 
 									</div>

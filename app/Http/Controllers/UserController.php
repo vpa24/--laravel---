@@ -19,7 +19,7 @@ class UserController extends Controller
                         ->limit(12)
                         ->get();
 
-        return view('pages.index', ['users' => $ds_san_pham]);
+        return view('pages.index', ['ds_san_pham' => $ds_san_pham]);
 
     }
 }

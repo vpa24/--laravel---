@@ -1,11 +1,11 @@
 @extends('main')
-@section('title',$san_pham_theo_ma_loai[0]->ten_loai)
+@section('title','Sản Phẩm Mới')
 @section('content')
   <div class="product">
 
   			<div class="container">
   				<div class="mid-popular">
-            @foreach ($san_pham_theo_ma_loai as $sp)
+            @foreach ($sp_moi as $sp)
               <div class="col-md-3 item-grid1 simpleCart_shelfItem">
                 <div class=" mid-pop">
                   <div class="pro-img">

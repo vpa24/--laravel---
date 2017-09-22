@@ -100,12 +100,10 @@
 							</div>
 						</div>
 						<div class="col1 col5">
-							@isset($san_pham_theo_ma_loai)
-								<img src="../images/thuc-pham-chuc-nang.jpg" class="img-responsive fix" alt="">
-							@endisset
-							@empty($san_pham_theo_ma_loai)
+							@isset($ds_san_pham)
 								<img src="images/thuc-pham-chuc-nang.jpg" class="img-responsive fix" alt="">
-							@endempty
+							@endisset
+							<img src="../images/thuc-pham-chuc-nang.jpg" class="img-responsive fix" alt="">
 						<div>
 						<div class="clearfix"></div>
 					</div>
@@ -156,23 +154,22 @@
 							</div>
 						</div>
 						<div class="col1 col5">
-							@isset($san_pham_theo_ma_loai)
-								<img src="../images/1dsp-20160207-sh004.png" class="img-responsive" alt="">
-							@endisset
+								<img src="images/1dsp-20160207-sh004.png" class="img-responsive" alt="">
 
-						@empty($san_pham_theo_ma_loai)
-							<img src="images/1dsp-20160207-sh004.png" class="img-responsive" alt="">
-						@endempty
+
+						@isset($ds_san_pham)
+							<img src="../images/1dsp-20160207-sh004.png" class="img-responsive" alt="">
+						@endisset()
 
 						</div>
 						<div class="clearfix"></div>
 					</div>
 				</div>
 			</li>
-			<li><a class="color3" href="/loai-san-pham/4">Sale</a></li>
-			<li><a class="color4" href="404.html">About</a></li>
-            <li><a class="color5" href="typo.html">Short Codes</a></li>
-            <li ><a class="color6" href="contact.html">Contact</a></li>
+			<li><a class="color3" href="/giam-gia">Giảm Giá</a></li>
+			<li><a class="color4" href="/san-pham-moi">Sản Phẩm Mới</a></li>
+
+            <li ><a class="color6" href="contact.html">Liên Hệ</a></li>
         </ul>
      </div><!-- /.navbar-collapse -->
 

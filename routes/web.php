@@ -13,3 +13,5 @@
 //route trang chu
 Route::get('/','UserController@index')->name('/');
 Route::get('/loai-san-pham/{ma_loai}','San_PhamController@Hien_thi_san_pham_theo_ma_loai');
+Route::get('/giam-gia','San_PhamController@Giam_gia');
+Route::get('/san-pham-moi','San_PhamController@Moi');

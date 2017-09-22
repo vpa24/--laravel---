@@ -50,132 +50,115 @@
    <!-- Collect the nav links, forms, and other content for toggling -->
     <div class="collapse navbar-collapse" id="bs-megadropdown-tabs">
         <ul class="nav navbar-nav nav_1">
-            <li><a class="color" href="index.html">Home</a></li>
+            <li><a class="color" href=".">Trang chủ</a></li>
 
     		<li class="dropdown mega-dropdown active">
-			    <a class="color1" href="#" class="dropdown-toggle" data-toggle="dropdown">Women<span class="caret"></span></a>
+			    <a class="color1" href="#" class="dropdown-toggle" data-toggle="dropdown">Thực Phẩm<span class="caret"></span></a>
 				<div class="dropdown-menu ">
                     <div class="menu-top">
 						<div class="col1">
 							<div class="h_nav">
-								<h4>Submenu1</h4>
+								<h4>Đồ tươi sống</h4>
 									<ul>
-										<li><a href="product.html">Accessories</a></li>
-										<li><a href="product.html">Bags</a></li>
-										<li><a href="product.html">Caps & Hats</a></li>
-										<li><a href="product.html">Hoodies & Sweatshirts</a></li>
+										<li><a href="product.html">Rau - Củ - Quả</a></li>
+										<li><a href="product.html">Hải Sản</a></li>
+										<li><a href="product.html">Đậu Hủ</a></li>
+										<li><a href="product.html">Thịt</a></li>
 
 									</ul>
 							</div>
 						</div>
 						<div class="col1">
 							<div class="h_nav">
-								<h4>Submenu2</h4>
+								<h4>Bơ - Sữa</h4>
 								<ul>
-										<li><a href="product.html">Jackets & Coats</a></li>
-										<li><a href="product.html">Jeans</a></li>
-										<li><a href="product.html">Jewellery</a></li>
-										<li><a href="product.html">Jumpers & Cardigans</a></li>
-										<li><a href="product.html">Leather Jackets</a></li>
-										<li><a href="product.html">Long Sleeve T-Shirts</a></li>
-									</ul>
+										<li><a href="product.html">Sữa Nước</a></li>
+										<li><a href="product.html">Phô Mai</a></li>
+										<li><a href="product.html">Sữa Chua</a></li>
+								</ul>
 							</div>
 						</div>
 						<div class="col1">
 							<div class="h_nav">
-								<h4>Submenu3</h4>
+								<h4>Đồ Uống</h4>
 									<ul>
-										<li><a href="product.html">Shirts</a></li>
-										<li><a href="product.html">Shoes, Boots & Trainers</a></li>
-										<li><a href="product.html">Sunglasses</a></li>
-										<li><a href="product.html">Sweatpants</a></li>
-										<li><a href="product.html">Swimwear</a></li>
-										<li><a href="product.html">Trousers & Chinos</a></li>
-
+										<li><a href="product.html">Nước Ngọt</a></li>
+										<li><a href="product.html">Nước Suối</a></li>
+										<li><a href="product.html">Cà Phê</a></li>
+										<li><a href="product.html">Bia</a></li>
 									</ul>
 
 							</div>
 						</div>
 						<div class="col1">
 							<div class="h_nav">
-								<h4>Submenu4</h4>
+								<h4>Thực Phẩm khô</h4>
 								<ul>
-									<li><a href="product.html">T-Shirts</a></li>
-									<li><a href="product.html">Underwear & Socks</a></li>
-									<li><a href="product.html">Vests</a></li>
-									<li><a href="product.html">Jackets & Coats</a></li>
-									<li><a href="product.html">Jeans</a></li>
-									<li><a href="product.html">Jewellery</a></li>
+									<li><a href="product.html">Mì Ăn Liền</a></li>
+									<li><a href="product.html">Đường</a></li>
+									<li><a href="product.html">Gia Vị</a></li>
+									<li><a href="product.html">Dầu Ăn</a></li>
 								</ul>
 							</div>
 						</div>
 						<div class="col1 col5">
-						<img src="images/me.png" class="img-responsive" alt="">
+						<img src="images/thuc-pham-chuc-nang.jpg" class="img-responsive fix" alt="">
 						</div>
 						<div class="clearfix"></div>
 					</div>
 				</div>
 			</li>
 			<li class="dropdown mega-dropdown active">
-			    <a class="color2" href="#" class="dropdown-toggle" data-toggle="dropdown">Men<span class="caret"></span></a>
+			    <a class="color2" href="#" class="dropdown-toggle" data-toggle="dropdown">Gia đình<span class="caret"></span></a>
 				<div class="dropdown-menu mega-dropdown-menu">
                     <div class="menu-top">
 						<div class="col1">
 							<div class="h_nav">
-								<h4>Submenu1</h4>
+								<h4>Bách Hóa</h4>
 									<ul>
-										<li><a href="product.html">Accessories</a></li>
-										<li><a href="product.html">Bags</a></li>
-										<li><a href="product.html">Caps & Hats</a></li>
-										<li><a href="product.html">Hoodies & Sweatshirts</a></li>
+										<li><a href="product.html">Bột Giặt</a></li>
+										<li><a href="product.html">Nước Giặt</a></li>
+										<li><a href="product.html">Nước Xả Vải</a></li>
+										<li><a href="product.html">Nước Lau Sàn</a></li>
 
 									</ul>
 							</div>
 						</div>
 						<div class="col1">
 							<div class="h_nav">
-								<h4>Submenu2</h4>
+								<h4>Làm Đẹp</h4>
 								<ul>
-										<li><a href="product.html">Jackets & Coats</a></li>
-										<li><a href="product.html">Jeans</a></li>
-										<li><a href="product.html">Jewellery</a></li>
-										<li><a href="product.html">Jumpers & Cardigans</a></li>
-										<li><a href="product.html">Leather Jackets</a></li>
-										<li><a href="product.html">Long Sleeve T-Shirts</a></li>
+										<li><a href="product.html">Thực Phẩm Chức Năng</a></li>
+										<li><a href="product.html">Handmade</a></li>
+										<li><a href="product.html">Dược Mỹ Phẩm</a></li>
+										<li><a href="product.html">Cho Sắc Đẹp</a></li>
 									</ul>
 							</div>
 						</div>
 						<div class="col1">
 							<div class="h_nav">
-								<h4>Submenu3</h4>
-
-<ul>
-										<li><a href="product.html">Shirts</a></li>
-										<li><a href="product.html">Shoes, Boots & Trainers</a></li>
-										<li><a href="product.html">Sunglasses</a></li>
-										<li><a href="product.html">Sweatpants</a></li>
-										<li><a href="product.html">Swimwear</a></li>
-										<li><a href="product.html">Trousers & Chinos</a></li>
-
+								<h4>Bách Hóa</h4>
+									<ul>
+										<li><a href="product.html">Bột Giặt</a></li>
+										<li><a href="product.html">Nước Giặt</a></li>
+										<li><a href="product.html">Nước Xả Vải</a></li>
+										<li><a href="product.html">Nước Lau Sàn</a></li>
 									</ul>
-
 							</div>
 						</div>
 						<div class="col1">
 							<div class="h_nav">
-								<h4>Submenu4</h4>
+								<h4>Đồ Dùng</h4>
 								<ul>
-									<li><a href="product.html">T-Shirts</a></li>
-									<li><a href="product.html">Underwear & Socks</a></li>
-									<li><a href="product.html">Vests</a></li>
-									<li><a href="product.html">Jackets & Coats</a></li>
-									<li><a href="product.html">Jeans</a></li>
-									<li><a href="product.html">Jewellery</a></li>
+									<li><a href="product.html">Bàn Chải</a></li>
+									<li><a href="product.html">Kem Đánh Răng</a></li>
+									<li><a href="product.html">Sữa Tắm</a></li>
+									<li><a href="product.html">Dầu Gội</a></li>
 								</ul>
 							</div>
 						</div>
 						<div class="col1 col5">
-						<img src="images/me1.png" class="img-responsive" alt="">
+						<img src="images/1dsp-20160207-sh004.png" class="img-responsive" alt="">
 						</div>
 						<div class="clearfix"></div>
 					</div>

@@ -1129,6 +1129,9 @@ img {
   max-width: 100%;
   height: auto;
 }
+.fix{
+  margin-top: 17%;
+}
 .img-rounded {
   border-radius: 6px;
 }

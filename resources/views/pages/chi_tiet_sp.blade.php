@@ -14,11 +14,15 @@
 <div class="col-md-7 single-top-in">
 						<div class="span_2_of_a1 simpleCart_shelfItem">
 				<h2>{{$chi_tiet_sp->ten_sp}}</h2>
+        <h4 class="thuong_hieu">Tên thương hiệu:
+            <a href="/thuong_hieu/{{$chi_tiet_sp->ma_thuong_hieu}}" class="ten_thuong_hieu">{{$chi_tiet_sp->ten_thuong_hieu}}</a>
+        </h4>
 				  <div class="price_single">
 				  <span class="reducedfrom item_price">{{number_format($chi_tiet_sp->don_gia_khuyen_mai)}} đ</span>
 
 				 <div class="clearfix"></div>
 				</div>
+
 
 				 <div class="quantity">
 								<div class="quantity-select">
@@ -30,7 +34,7 @@
 							<!--quantity-->
 
 
-			    <a href="#" class="add-to item_add hvr-skew-backward">Add to cart</a>
+			    <a href="/them-gio-hang/{{$chi_tiet_sp->ma_sp}}" class="add-to item_add hvr-skew-backward">Add to cart</a>
 			<div class="clearfix"> </div>
 			</div>
 

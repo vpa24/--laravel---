@@ -25,9 +25,13 @@ class San_PhamController extends Controller
     return view('pages.san_pham_moi',['sp_moi'=>$moi]);
   }
   public function ChiTietSP($ma_sp){
-    $chi_tiet=m_san_pham::where('ma_sp',$ma_sp)->first();
+    $chi_tiet=m_san_pham::join('thuong_hieu','thuong_hieu.ma_thuong_hieu','=','san_pham.ma_thuong_hieu')->where('ma_sp',$ma_sp)->first();
     return view('pages.chi_tiet_sp',['chi_tiet_sp'=>$chi_tiet]);
     }
+  public function ThuongHieu($ma_thuong_hieu){
+      $thuong_hieu=m_san_pham::join('thuong_hieu','thuong_hieu.ma_thuong_hieu','=','san_pham.ma_thuong_hieu')->where('san_pham.ma_thuong_hieu',$ma_thuong_hieu)->paginate(8);
+      return view('pages.san_pham_cung_thuong_hieu',['thuong_hieus'=>$thuong_hieu]);
+  }
 }
 
 

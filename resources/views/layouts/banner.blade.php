@@ -18,5 +18,14 @@
 			<h2><a href="index.html">Trang chủ</a><label>/</label>{{$san_pham_theo_ma_loai[0]->ten_loai	}}</h2>
 		</div>
 	</div>
-@endisset
+	@endisset
+	@isset($thuong_hieus)
+		<div class="banner-top" style="background:url('../images/Brand-Story.jpg') no-repeat">
+			<div class="container">
+				<h1 class="ten_nhom_loai">Thương Hiệu</h1>
+				<em></em>
+				<h2><a href="index.html">Trang chủ</a><label>/</label>{{$thuong_hieus[0]->ten_thuong_hieu		}}</h2>
+			</div>
+		</div>
+	@endisset
 @endempty

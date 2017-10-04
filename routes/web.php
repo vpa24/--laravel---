@@ -16,3 +16,5 @@ Route::get('/loai-san-pham/{ma_loai}','San_PhamController@Hien_thi_san_pham_theo
 Route::get('/giam-gia','San_PhamController@Giam_gia');
 Route::get('/san-pham-moi','San_PhamController@Moi');
 Route::get('chi_tiet/{ma_sp}','San_PhamController@ChiTietSP');
+Route::get('thuong_hieu/{ma_thuong_hieu}','San_PhamController@ThuongHieu');
+Route::get('them-gio-hang/{ma_sp}','CartController@Add');

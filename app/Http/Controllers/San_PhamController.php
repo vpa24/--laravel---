@@ -11,7 +11,9 @@ use App\BannerModel;
 class San_PhamController extends Controller
 {
   public function Hien_thi_san_pham_theo_ma_loai($ma_loai){
-    $san_phams=m_san_pham::join('loai_sp','san_pham.ma_loai','=','loai_sp.ma_loai')->where('san_pham.ma_loai', $ma_loai)->get();
+    $san_phams=m_san_pham::join('loai_sp','san_pham.ma_loai','=','loai_sp.ma_loai')
+              ->join('nhom_loai_sp','loai_sp.ma_nhom_loai','=','nhom_loai_sp.ma_nhom_loai')
+              ->where('san_pham.ma_loai', $ma_loai)->paginate(8);
     return view('pages.san_pham_theo_ma_loai', ['san_pham_theo_ma_loai' => $san_phams]);
   }
   public function Giam_gia(){
@@ -22,6 +24,10 @@ class San_PhamController extends Controller
     $moi=m_san_pham::orderBy('ma_loai','desc')->limit(12)->get();
     return view('pages.san_pham_moi',['sp_moi'=>$moi]);
   }
+  public function ChiTietSP($ma_sp){
+    $chi_tiet=m_san_pham::where('ma_sp',$ma_sp)->first();
+    return view('pages.chi_tiet_sp',['chi_tiet_sp'=>$chi_tiet]);
+    }
 }
 
 

@@ -7,7 +7,7 @@
     <h3>Bán Chạy</h3>
     <label class="line"></label>
     <div class="mid-popular">
-      @foreach ($ds_san_pham as $sp )
+      @foreach ($san_pham_ban_chay as $sp )
         <div class="col-md-3 item-grid simpleCart_shelfItem">
           <div class=" mid-pop">
             <div class="pro-img">
@@ -39,23 +39,7 @@
 
   </div>
   <!--//products-->
-  <!--brand-->
-  <div class="brand">
-    <div class="col-md-3 brand-grid">
-      <img src="images/ic.png" class="img-responsive" alt="">
-    </div>
-    <div class="col-md-3 brand-grid">
-      <img src="images/ic1.png" class="img-responsive" alt="">
-    </div>
-    <div class="col-md-3 brand-grid">
-      <img src="images/ic2.png" class="img-responsive" alt="">
-    </div>
-    <div class="col-md-3 brand-grid">
-      <img src="images/ic3.png" class="img-responsive" alt="">
-    </div>
-    <div class="clearfix"></div>
-  </div>
-  <!--//brand-->
+
   </div>
 
 </div>

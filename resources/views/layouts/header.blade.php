@@ -115,30 +115,31 @@
                     <div class="menu-top">
 						<div class="col1">
 							<div class="h_nav">
-								<h4>Sức Khỏe</h4>
-									<ul>
-										<li><a href="/loai-san-pham/54">Thực Phẩm Chức Năng</a></li>
-										<li><a href="/loai-san-pham/55">Handmade</a></li>
-									</ul>
-							</div>
-						</div>
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Làm Đẹp</h4>
-								<ul>
-										<li><a href="/loai-san-pham/56">Dược Mỹ Phẩm</a></li>
-										<li><a href="/loai-san-pham/57">Cho Sắc Đẹp</a></li>
-									</ul>
-							</div>
-						</div>
-						<div class="col1">
-							<div class="h_nav">
-								<h4>Bách Hóa</h4>
+								<h4>Áo Quần </h4>
 									<ul>
 										<li><a href="/loai-san-pham/36">Bột Giặt</a></li>
 										<li><a href="/loai-san-pham/37">Nước Giặt</a></li>
 										<li><a href="/loai-san-pham/43">Nước Xả Vải</a></li>
+									</ul>
+							</div>
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Bánh - Kẹo</h4>
+								<ul>
+										<li><a href="/loai-san-pham/25">Bánh</a></li>
+										<li><a href="/loai-san-pham/26">Kẹo</a></li>
+									</ul>
+							</div>
+						</div>
+						<div class="col1">
+							<div class="h_nav">
+								<h4>Nhà Cửa</h4>
+									<ul>
 										<li><a href="/loai-san-pham/48">Nước Lau Sàn</a></li>
+										<li><a href="/loai-san-pham/49">Nước Lau Kính</a></li>
+
+
 									</ul>
 							</div>
 						</div>
@@ -154,12 +155,11 @@
 							</div>
 						</div>
 						<div class="col1 col5">
+							@isset($ds_san_pham)
 								<img src="images/1dsp-20160207-sh004.png" class="img-responsive" alt="">
-
-
-						@isset($ds_san_pham)
+							@endisset()
 							<img src="../images/1dsp-20160207-sh004.png" class="img-responsive" alt="">
-						@endisset()
+
 
 						</div>
 						<div class="clearfix"></div>

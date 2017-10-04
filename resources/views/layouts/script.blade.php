@@ -10,3 +10,28 @@
 			$('a.picture').Chocolat();
 		});
 		</script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+	$("#giam").click(function(){
+		var sl=$(".value").val();
+		sl--;
+		$(".value").val(sl);
+		if(sl<=1)
+			$(".value").val(1);
+	});
+	$("#tang").click(function(){
+			var sl=$(".value").val();
+			sl++;
+			$(".value").val(sl);
+	});
+});
+</script>
+<script>
+$("#zoom_08").elevateZoom({
+			zoomWindowFadeIn: 800,
+			zoomWindowFadeOut: 800,
+			lensFadeIn: 800,
+			lensFadeOut: 800
+});
+</script>

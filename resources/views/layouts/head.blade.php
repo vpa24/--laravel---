@@ -14,6 +14,7 @@ Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, Sony
 <link href="{{asset('css/style4.css')}}" rel="stylesheet" type="text/css" media="all" />
 <!--//theme-style-->
 <script src="{{asset('js/jquery.min.js')}}"></script>
+<script type="text/javascript" src="{{asset('js/jquery.elevatezoom.js')}}"></script>
 <!--- start-rate---->
 <script src="{{asset('js/jstarbox.js')}}"></script>
 	<link rel="stylesheet" href="{{asset('css/jstarbox.css')}}" type="text/css" media="screen" charset="utf-8" />

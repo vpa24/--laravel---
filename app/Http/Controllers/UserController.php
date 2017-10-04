@@ -8,6 +8,7 @@ use App\Http\Controllers\Controller;
 use App\Http\Requests;
 use App\m_san_pham;
 
+
 class UserController extends Controller
 {
     public function index()
@@ -19,7 +20,7 @@ class UserController extends Controller
                         ->limit(12)
                         ->get();
 
-        return view('pages.index', ['ds_san_pham' => $ds_san_pham]);
+        return view('pages.index', ['san_pham_ban_chay' => $ds_san_pham]);
 
     }
 }

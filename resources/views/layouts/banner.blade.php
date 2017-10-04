@@ -1,25 +1,22 @@
-<div class="banner">
-<div class="container">
-<section class="rw-wrapper">
-				<h1 class="rw-sentence">
-					<span>Fashion &amp; Beauty</span>
-					<div class="rw-words rw-words-1">
-						<span>Beautiful Designs</span>
-						<span>Sed ut perspiciatis</span>
-						<span> Totam rem aperiam</span>
-						<span>Nemo enim ipsam</span>
-						<span>Temporibus autem</span>
-						<span>intelligent systems</span>
-					</div>
-					<div class="rw-words rw-words-2">
-						<span>We denounce with right</span>
-						<span>But in certain circum</span>
-						<span>Sed ut perspiciatis unde</span>
-						<span>There are many variation</span>
-						<span>The generated Lorem Ipsum</span>
-						<span>Excepteur sint occaecat</span>
-					</div>
-				</h1>
-			</section>
-			</div>
-</div>
+@isset($san_pham_ban_chay)
+	<div class="banner" style="background:url('../images/InnerPageBannerImage-Supermarket.jpg') no-repeat">
+	<div class="container">
+	<section class="rw-wrapper">
+					<h1 class="rw-sentence">
+						<span>Ưu đãi 50%</span>
+					</h1>
+		</section>
+		</div>
+	</div>
+@endisset ($san_pham_ban_chay)
+@empty ($san_pham_ban_chay)
+	@isset($san_pham_theo_ma_loai)
+	<div class="banner-top" style="background:url('../images/{{$san_pham_theo_ma_loai[0]->hinh_nhom_loai}}') no-repeat">
+		<div class="container">
+			<h1 class="ten_nhom_loai">{{$san_pham_theo_ma_loai[0]->ten_nhom_loai	}}</h1>
+			<em></em>
+			<h2><a href="index.html">Trang chủ</a><label>/</label>{{$san_pham_theo_ma_loai[0]->ten_loai	}}</h2>
+		</div>
+	</div>
+@endisset
+@endempty

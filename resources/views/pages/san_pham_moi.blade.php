@@ -17,7 +17,7 @@
                 </div>
                 <div class="mid-1">
                 <div class="women limit_line">
-                  <h6><a href="single.html">{{$sp->ten_sp}}</a></h6>
+                  <h6><a href="/chi_tiet/{{$sp->ma_sp}}">{{$sp->ten_sp}}</a></h6>
                   <div class="clearfix"></div>
                   </div>
                   <div class="mid-2">

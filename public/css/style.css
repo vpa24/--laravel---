@@ -235,7 +235,6 @@ a.item_add {
 	width: 100%;
     height: 700px;
     display: block;
-    background: url(../images/ba11.jpg)no-repeat right top;
 	overflow-x:hidden;
 }
 .no-cssanimations .rw-wrapper .rw-sentence span:first-child{
@@ -601,12 +600,14 @@ a.buy-now:hover{
 	font-family: 'Ubuntu-Regular';
 }
 .banner-top h2{
-	font-size:0.9em;
-	color:#fff;
+	font-size:22px;
+	color:#18ABE3;
 	margin-top:1em;
+
 }
 .banner-top h2 a{
 	color:#f67777;
+  font-size: 22px;
 }
 .banner-top h2 label{
 	margin:0 0.4em;
@@ -615,7 +616,7 @@ a.buy-now:hover{
     width: 100px;
     height: 2px;
     display: block;
-    background: #fff;
+    background: #2E2E2E;
     border-radius: 10px;
     margin: 0.5em auto;
 }
@@ -686,7 +687,7 @@ a.cart:hover{
 	border-bottom:1px solid #fa7455	;
 }
 .single {
-  padding: 5em 0 0;
+  padding: 5em 0 8em 0;
 }
 .available h6{
 	color:#52D0C4;
@@ -781,6 +782,8 @@ color: #B3B3B3;
 .price_single {
 	border-bottom: 1px solid #f0f0f0;
     padding-bottom: 1em;
+    padding-top: 20px;
+    margin-left: 25px;
 }
 span.reducedfrom {
 	    color: #F67777;
@@ -864,9 +867,9 @@ span.actual {
 .value  {
     cursor: default;
     width: 40px;
-	height:40px;
+	  height:40px;
     padding: 8px 0px;
-    color: #A9A9A9;
+    color: #000;
     line-height: 24px;
     border: 1px solid #E5E5E5;
     background-color: #E5E5E5;
@@ -881,6 +884,7 @@ span.actual {
 
 .quantity-select .entry.value-minus{
     margin-left: 0;
+    float: left;
 }
 /*--quantity-end--*/
 /* Skew Backward */
@@ -2348,4 +2352,28 @@ td.add-check a {
 .hinh{
   width: 233px;
   height: 233px;
+}
+.ten_nhom_loai{
+  color:#2E2E2E !important;
+}
+.phan_trang{
+  text-align: center;
+  margin-top: 50px;
+  margin-bottom: 50px;
+}
+.hinh_chi_tiet{
+  margin: -15px;
+  border: 1px solid #999;
+  padding: 5px;
+}
+.so_luong{
+  float: left;
+}
+.tieu_de{
+  color:#ff6c6c;
+  margin:10px 0 20px 50px;
+}
+.ten_sp{
+  color: #189EFF;
+  margin:10px 0 30px 100px;
 }

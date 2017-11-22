@@ -188,18 +188,17 @@ a.item_add {
   color: #000;
   font-size: 1em;
 }
-.box_1 h3 img{
-	margin-left: 5px;
-}
+
 .box_1 p a{
   color: #B5B3B3;
   font-size: 0.77em;
 }
 .total {
   display: inline-block;
+  margin-top: 13px;
 }
 .cart.box_1{
-	float: right;
+
 	margin-top: 2px;
 }
 
@@ -224,7 +223,7 @@ a.item_add {
 
 }
 .cart{
-	float:right;
+	/*float:right;*/
 }
 .search-right {
     padding: 0.6em 0 0;
@@ -789,7 +788,6 @@ span.reducedfrom {
 	    color: #F67777;
     font-size: 1.5em;
     font-family: 'Ubuntu-Bold';
-    float: left;
 }
 .price_single a {
 	color: #999;
@@ -1033,7 +1031,7 @@ nav.nav-sidebar {
 	color: #F67777;
     font-size: 1em;
 }
-.login-mail input[type="text"],.login-mail input[type="password"]{
+.login-mail input[type="text"],.login-mail input[type="password"],.login-mail input[type="email"]{
 	border: none;
 	outline:none;
 	font-size: 0.9em;
@@ -1127,7 +1125,8 @@ nav.nav-sidebar {
     margin: 1em 0 ;
 }
 .produced {
-    text-align: center;
+    text-align:right;
+    margin-bottom: 50px;
 }
 /*--contact--*/
 .contact-form {
@@ -1307,8 +1306,6 @@ a.at-in {
   width: 28px;
   height: 28px;
   position: absolute;
-  right: 5px;
-  bottom: 10px;
   -webkit-transition: color 0.2s ease-in-out;
   -moz-transition: color 0.2s ease-in-out;
   -o-transition: color 0.2s ease-in-out;
@@ -2378,8 +2375,39 @@ td.add-check a {
   margin:10px 0 30px 100px;
 }
 .thuong_hieu{
-  margin:10px 0 10px 20px;
+  margin:20px 0 0 20px;
 }
 .ten_thuong_hieu{
   color: #F67777;
+}
+.cart_img{
+  margin-left: 200px;
+  margin-top: -35px;
+}
+.ten_sp a{
+  color: #f67777;
+
+}
+.tong_cong{
+  text-align: right;
+  margin-bottom: 50px;
+}
+.btn_cap_nhap{
+  display: inline-block;
+  vertical-align: middle;
+  transform: translateZ(0);
+  backface-visibility: hidden;
+  transition-duration: 0.3s;
+  transition-property: transform;
+  transform-origin: 0 100%;
+  background-color: #F67777;
+   color: #fff;
+   padding: 0.5em 1em;
+   font-size:1em;
+}
+
+.loi{
+  width:300px;
+  text-align: center;
+  margin-left: 10%;
 }

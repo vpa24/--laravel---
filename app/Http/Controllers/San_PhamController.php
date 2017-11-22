@@ -1,35 +1,37 @@
 <?php
 namespace App\Http\Controllers;
-
+use Auth;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\DB;
 use App\Http\Controllers\Controller;
 use App\Http\Requests;
-use App\m_san_pham;
-use App\BannerModel;
+use App\SanPhamModel;
+use Symfony\Component\HttpFoundation\JsonResponse;
 
 class San_PhamController extends Controller
 {
+  public function San_Pham_ban_Chay(){
+    $ds_san_pham=SanPhamModel::SanPhamBanChay();
+    return view('pages.index', ['san_pham_ban_chay' => $ds_san_pham]);
+  }
   public function Hien_thi_san_pham_theo_ma_loai($ma_loai){
-    $san_phams=m_san_pham::join('loai_sp','san_pham.ma_loai','=','loai_sp.ma_loai')
-              ->join('nhom_loai_sp','loai_sp.ma_nhom_loai','=','nhom_loai_sp.ma_nhom_loai')
-              ->where('san_pham.ma_loai', $ma_loai)->paginate(8);
+    $san_phams=SanPhamModel::SanPhamTheoMaLoai($ma_loai);
     return view('pages.san_pham_theo_ma_loai', ['san_pham_theo_ma_loai' => $san_phams]);
   }
   public function Giam_gia(){
-    $giam_gia=m_san_pham::orderBy('don_gia','-','don_gia_khuyen_mai','desc')->limit(12)->get();
+    $giam_gia=SanPhamModel::GiamGia();
     return view('pages.giam_gia',['giam'=>$giam_gia]);
   }
   public function Moi(){
-    $moi=m_san_pham::orderBy('ma_loai','desc')->limit(12)->get();
+    $moi=SanPhamModel::SanPhamMoi();
     return view('pages.san_pham_moi',['sp_moi'=>$moi]);
   }
   public function ChiTietSP($ma_sp){
-    $chi_tiet=m_san_pham::join('thuong_hieu','thuong_hieu.ma_thuong_hieu','=','san_pham.ma_thuong_hieu')->where('ma_sp',$ma_sp)->first();
+       $chi_tiet=\Response::json(SanPhamModel::ChiTietSP($ma_sp))->getData();
     return view('pages.chi_tiet_sp',['chi_tiet_sp'=>$chi_tiet]);
-    }
+  }
   public function ThuongHieu($ma_thuong_hieu){
-      $thuong_hieu=m_san_pham::join('thuong_hieu','thuong_hieu.ma_thuong_hieu','=','san_pham.ma_thuong_hieu')->where('san_pham.ma_thuong_hieu',$ma_thuong_hieu)->paginate(8);
+    $thuong_hieu= SanPhamModel::ThuongHieu($ma_thuong_hieu);
       return view('pages.san_pham_cung_thuong_hieu',['thuong_hieus'=>$thuong_hieu]);
   }
 }

@@ -1,11 +1,6 @@
-<script src="{{asset('js/simpleCart.min.js')}}"> </script>
 <!-- slide -->
-<script src="{{asset('js/bootstrap.min.js')}}"></script>
-<!--light-box-files -->
-		<script src="{{asset('js/jquery.chocolat.js')}}"></script>
-		<link rel="stylesheet" href="{{asset('css/chocolat.css')}}" type="text/css" media="screen" charset="utf-8">
-		<!--light-box-files -->
-		<script type="text/javascript" charset="utf-8">
+
+	<script type="text/javascript" charset="utf-8">
 		$(function() {
 			$('a.picture').Chocolat();
 		});
@@ -25,6 +20,23 @@ $(document).ready(function(){
 			sl++;
 			$(".value").val(sl);
 	});
+	@isset($gio_hang)
+	    @foreach ($gio_hang as $cart)
+$("#tang_{{$cart->rowId}}").click(function(){
+		var sl=$("#qty_{{$cart->rowId}}").val();
+		sl++;
+		$("#qty_{{$cart->rowId}}").val(sl);
+});
+$("#giam_{{$cart->rowId}}").click(function(){
+	var sl=$("#qty_{{$cart->rowId}}").val();
+	sl--;
+	$("#qty_{{$cart->rowId}}").val(sl);
+	if(sl<=1)
+		$("#qty_{{$cart->rowId}}").val(1);
+});
+		@endforeach
+	@endisset
+
 });
 </script>
 <script>

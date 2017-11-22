@@ -14,12 +14,12 @@
               <img src="images/san_pham/{{$sp->hinh}}" class="img-responsive" alt="">
                 <div class="zoom-icon ">
 
-                  <a href="single.html"><i class="glyphicon glyphicon-menu-right icon"></i></a>
+                  <a href="{{route('chi_tiet',$sp->ma_sp)}}"><i class="glyphicon glyphicon-menu-right icon"></i></a>
                 </div>
           </div>
           <div class="mid-1">
           <div class="women limit_line">
-            <h6><a href="single.html">{{$sp->ten_sp}}</a></h6>
+            <h6><a href="{{route('chi_tiet',$sp->ma_sp)}}">{{$sp->ten_sp}}</a></h6>
             <div class="clearfix"></div>
             </div>
             <div class="mid-2">

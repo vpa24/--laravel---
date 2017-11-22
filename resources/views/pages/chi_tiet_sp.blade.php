@@ -18,23 +18,22 @@
             <a href="/thuong_hieu/{{$chi_tiet_sp->ma_thuong_hieu}}" class="ten_thuong_hieu">{{$chi_tiet_sp->ten_thuong_hieu}}</a>
         </h4>
 				  <div class="price_single">
-				  <span class="reducedfrom item_price">{{number_format($chi_tiet_sp->don_gia_khuyen_mai)}} đ</span>
+				Đơn giá:  <span class="reducedfrom item_price">{{number_format($chi_tiet_sp->don_gia_khuyen_mai)}} đ</span>
 
 				 <div class="clearfix"></div>
 				</div>
 
-
+              {{ Form::open(['action' => ['CartController@Add',$chi_tiet_sp->ma_sp],'method'=>'put']) }}
 				 <div class="quantity">
 								<div class="quantity-select">
 									<div class="entry value-minus" id="giam">&nbsp;</div>
-									<div class="so_luong"><input type="text" class="entry value" name="so_luong" value="1"></div>
+									<div class="so_luong"><input type="text" class="entry value item_quantity_" name="so_luong" value="1" id="sl_{{$chi_tiet_sp->ma_sp}}"></div>
 									<div class="entry value-plus active" id="tang">&nbsp;</div>
 								</div>
 							</div>
 							<!--quantity-->
-
-
-			    <a href="/them-gio-hang/{{$chi_tiet_sp->ma_sp}}" class="add-to item_add hvr-skew-backward">Add to cart</a>
+                 {{Form::submit('Thêm vào giỏ hàng',['class'=>'add-to item_add hvr-skew-backward'])}}
+{{Form::close()}}
 			<div class="clearfix"> </div>
 			</div>
 

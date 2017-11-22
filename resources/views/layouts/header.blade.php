@@ -2,7 +2,11 @@
 <div class="container">
 		<div class="head">
 			<div class=" logo">
-				<a href="index.html"><img src="images/logo.png" alt=""></a>
+				<a href="index.html">
+					@isset($ds_san_pham)
+						<img src="images/logo.png" alt=""></a>
+					@endisset
+						<img src="../images/logo.png" alt=""></a>
 			</div>
 		</div>
 	</div>
@@ -10,9 +14,31 @@
 		<div class="container">
 		<div class="col-sm-5 col-md-offset-2  header-login">
 					<ul >
-						<li><a href="login.html">Login</a></li>
-						<li><a href="register.html">Register</a></li>
-						<li><a href="checkout.html">Checkout</a></li>
+						@if (Auth::guest())
+								<li><a href="{{ route('login') }}">Đăng nhập</a></li>
+								<li><a href="{{ route('register') }}">Đăng kí</a></li>
+						@else
+								<li class="dropdown">
+										<a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
+												{{ Auth::user()->name }}
+										</a>
+
+
+												<li>
+														<a href="{{ route('logout') }}"
+																onclick="event.preventDefault();
+																				 document.getElementById('logout-form').submit();">
+																Đăng xuất
+														</a>
+
+														<form id="logout-form" action="{{ route('logout') }}" method="POST" style="display: none;">
+																{{ csrf_field() }}
+														</form>
+												</li>
+
+								</li>
+						@endif
+						<li><a href="{{route('don_hang')}}">Đơn Hàng</a></li>
 					</ul>
 				</div>
 
@@ -184,12 +210,15 @@
 				<li><a class="play-icon popup-with-zoom-anim" href="#small-dialog"><i class="glyphicon glyphicon-search"> </i></a></li>
 					</ul>
 					<div class="cart box_1">
-						<a href="checkout.html">
-						<h3> <div class="total">
-							<span class="simpleCart_total"></span></div>
-							<img src="images/cart.png" alt=""/></h3>
+						<a href="{{url('/gio_hang')}}">
+						<h3> Giỏ hàng<div class="total">
+
+							@isset($ds_san_pham)
+								<img src="images/cart.png" alt="" class="cart_img"/></h3>
+							@endisset
+							<img src="../images/cart.png" alt="" class="cart_img"/></h3>
 						</a>
-						<p><a href="javascript:;" class="simpleCart_empty">Empty Cart</a></p>
+
 
 					</div>
 					<div class="clearfix"> </div>

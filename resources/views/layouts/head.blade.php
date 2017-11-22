@@ -1,23 +1,30 @@
 <head>
 <title> @yield('title')</title>
-<link href="{{asset('css/bootstrap.css')}}" rel="stylesheet" type="text/css" media="all" />
 <!-- Custom Theme files -->
+{{html::style('css/bootstrap.css')}}
 <!--theme-style-->
-<link href="{{asset('css/style.css')}}" rel="stylesheet" type="text/css" media="all" />
+{{html::style('css/style.css')}}
+{{html::style('css/style4.css')}}
+{{html::style('css/jstarbox.css')}}
+{{html::style('css/chocolat.css')}}
 <!--//theme-style-->
+<meta name="csrf-token" content="{{ csrf_token() }}">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
 <meta name="keywords" content="Shopin Responsive web template, Bootstrap Web Templates, Flat Web Templates, AndroId Compatible web template,
 Smartphone Compatible web template, free webdesigns for Nokia, Samsung, LG, SonyEricsson, Motorola web design" />
 <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
 <!--theme-style-->
-<link href="{{asset('css/style4.css')}}" rel="stylesheet" type="text/css" media="all" />
+
 <!--//theme-style-->
-<script src="{{asset('js/jquery.min.js')}}"></script>
-<script type="text/javascript" src="{{asset('js/jquery.elevatezoom.js')}}"></script>
+{{html::script('js/jquery.min.js')}}
+{{html::script('js/giohang.js')}}
+{{html::script('js/jquery.elevatezoom.js')}}
+{{html::script('js/jstarbox.js')}}
+{{html::script('js/bootstrap.min.js')}}
+{{html::script('js/jquery.chocolat.js')}}
+
 <!--- start-rate---->
-<script src="{{asset('js/jstarbox.js')}}"></script>
-	<link rel="stylesheet" href="{{asset('css/jstarbox.css')}}" type="text/css" media="screen" charset="utf-8" />
 		<script type="text/javascript">
 			jQuery(function() {
 			jQuery('.starbox').each(function() {

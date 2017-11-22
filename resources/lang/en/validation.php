@@ -100,6 +100,18 @@ return [
     */
 
     'custom' => [
+      'email'=>[
+        'required'=>'Hãy nhập email'
+      ],
+      'name'=>[
+        'required'=>'Hãy nhập tên của bạn'
+      ],
+      'password'=>[
+        'required'=>'Hãy nhập mật khẩu'
+      ],
+      'phone'=>[
+        'required'=>'Hãy nhập số điện thoại'
+      ],
         'attribute-name' => [
             'rule-name' => 'custom-message',
         ],
